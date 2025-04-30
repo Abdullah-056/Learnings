@@ -1,0 +1,84 @@
+\documentclass[]{article}
+\usepackage{amsfonts, amssymb, amsmath}
+\usepackage{float}
+% To turn off indenting (Paragraphs)
+\parindent 0px
+
+\usepackage{enumerate}
+\begin{document}
+	
+	The distributive property states that $a (b+c) = ab + bc + ac$, for all $a, b, c, \in \mathbb{R}$ \\[6pt]
+	$A$ can accept $[1, 2, 3]$ but not ${1, 2, 3}$ so we do $\{1, 2, 3\}$
+	
+	It does not accepts \$. So we put a slash before.\\[6pt]
+	 
+	 $$2(\frac{1}{x^2 - 1})$$. So we do: 
+	 $$2\left (\frac{1}{x^2 - 1}\right) $$
+	$$2\left [\frac{1}{x^2 - 1}\right ] $$ $$2\left \{\frac{1}{x^2 - 1}\right \} $$ $$2\left | \frac{1}{x^2 - 1}\right | $$
+	
+	$$\left.\frac{dy}{dx}\right|_{x=1} $$
+	
+	Tables: 
+	
+	\begin{tabular}{|c||c|c|c|c|c|} \hline
+		$x$ & 1 & 2 & 3 & 4 & 5 \\ \hline
+		$f(x)$ & 10 & 20 & 30 & 40 & 50 \\ \hline
+	\end{tabular}
+	
+	\vspace{0.66cm}
+	\begin{table}[H] 
+	\centering % for data to be centered
+	
+	% for spacing
+	\def \arraystretch{1}
+	% If a column has paragraph , it doesnot fit so we have to {c|c|p{3in}} , and it tells about width of data 
+	\begin{tabular}{|c||c|c|c|c|c|} \hline
+		$x$ & 11 & 22 & 33 & 44 & 55 \\ \hline
+		$f(x)$ & 110 & 220 & 330 & 440 & 550 \\ \hline
+	\end{tabular}
+	\caption{This is caption of the data }
+	\end{table}
+	% To be code in correct destination we have to use flow package
+	
+	
+	
+	Arrays: 
+	% everything in alaign is in math mode 
+	
+	% To alaign with = put & before =
+	\begin{align}
+		5x^2+3 &= 0 \text{ This is text}\\ 
+		a+3 &= b^2-3d \\
+		d^2-d-5 = 0
+	\end{align}
+	% If we want to remove line number, use {align*}
+	
+	\begin{enumerate} \setcounter{enumi}{6}
+		% This allows to be started after 6 
+		\item Ali
+		\item Ahmad
+		\begin{enumerate}
+			\item bin
+			\item Safeer
+		\end{enumerate}
+	\end{enumerate}
+	Bulleted List
+		\begin{itemize}
+		\item Ali
+		\item Ahmad
+		\item Bin Safeer
+	\end{itemize}
+	
+	% for custom names before bullets, we have to import enumerate
+	\vspace{2in}
+	Changed: 
+	\begin{enumerate}[A.]
+		\item Ali
+		\item Ahmad
+		\begin{enumerate}
+			\item[] bin  % add[] to remove numbering
+			\item Safeer
+		\end{enumerate}
+	\end{enumerate}
+	
+\end{document}
